@@ -13,7 +13,7 @@ local MapDownloads = {
     ["zs_cabin_v4"] = "2914179636",
     ["zs_fortress"] = "2914179636",
     ["zs_lambdacore_nzs"] = "2914179636",
-    ["zs_obj_devourer_towerz"] = "2914179636",
+    ["zs_obj_6_nights"] = "2914179636",
     ["zs_onett_v6"] = "2914179636",
     ["zs_zombiebridge"] = "2914179636",
 
@@ -51,7 +51,6 @@ local serverMaps = {
     "gm_construct",
     "zs_cabin_v4",
     "zs_lambdacore_nzs",
-    "zs_obj_devourer_towerz",
 
     -- Map Pack #2
     "ze_ffvii_mako_reactor_v5_4e1",
@@ -65,8 +64,7 @@ local navmeshedMaps = {
     -- Map Pack #1
     ["gm_construct"] = {Name = "GM Construct", Size = EXTRALARGE, Type = SURVIVAL},
     ["zs_cabin_v4"] = {Name = "Cabin V4", Size = SMALL, Type = SURVIVAL},
-    ["zs_lambdacore_nzs"] = {Name = "Lambdacore nZS", Size = MEDIUM, Type = SURVIVAL},
-    ["zs_obj_devourer_towerz"] = {Name = "Devourer Towerz", Size = TINY, Type = OBJECTIVE},
+    ["zs_lambdacore_nzs_v2"] = {Name = "Lambdacore nZS", Size = MEDIUM, Type = SURVIVAL},
 
     -- Map Pack #2
     ["ze_ffvii_mako_reactor_v5_4e1"] = {Name = "Mako Reactor V5 4E1", Size = LARGE, Type = ESCAPE},
