@@ -10,9 +10,9 @@ hook.Add("PostPlayerSpawn", "Demiboss.PPS", function(pl)
             return
         end
 
-		if classtab.Name == "The World" then
-            BroadcastLua("surface.PlaySound(\"nightrally/vo/theworld/theme.wav\")")
-            GAMEMODE:CenterNotify(NZSCOLOR_PINK, "It appears as if someone can modify the world and time...")
+		if classtab.GreatEvil then
+            GAMEMODE:CenterNotify(NZSCOLOR_DISASTER, {font = "ZSHUDFont"}, "A Great Evil has been summoned...")
+			BroadcastLua("MySelf:EmitSound(\"npc/zombie_poison/pz_alert1.wav\", 0, math.random(50, 60))")
             return
         end
     end
@@ -51,10 +51,6 @@ net.Receive("CorruptPactZClass", function()
 
     pl:SetNWInt("ZCorruptCreds", pl:GetNWInt("ZCorruptCreds") - cost)
 end)
-
-function PLAYER_META:AddCorruptionCredits(amount)
-    self:SetNWInt("ZCorruptCreds", self:GetNWInt("ZCorruptCreds") + amount)
-end
 
 hook.Add("PostHumanKilledZombie", "ZCorruptCredGain1", function(pl, attacker, inflictor, dmginfo, assistpl, assistamount, headshot)
     pl:AddCorruptionCredits(math.floor(pl:GetMaxZombieHealth()/5))

@@ -34,6 +34,10 @@ function meta:ShouldBotControlPlayer(arg)
     end
 end
 
+function meta:AddCorruptionCredits(amount)
+    self:SetNWInt("ZCorruptCreds", self:GetNWInt("ZCorruptCreds") + amount)
+end
+
 function MapProfileCredit()
     GAMEMODE:CenterNotify(Color(255, 165, 0), "Map Profile made by nightrally")
 end
