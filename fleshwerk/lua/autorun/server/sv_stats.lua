@@ -214,3 +214,5 @@ hook.Add("EndRound", "HStats.ER", function(winner)
 		end
 	end
 end)
+
+nightrally.LogFile("sv_stats.lua")

@@ -15,3 +15,5 @@ net.Receive( "NetD3botCommandUnControl", function( len, ply )
 		ply:SetEyeAngles( Angle( playerAng.x, playerAng.y, 0 ) )
 	end)
 end)
+
+nightrally.LogFile("sv_afk.lua")

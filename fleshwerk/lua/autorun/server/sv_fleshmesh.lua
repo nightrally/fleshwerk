@@ -11,3 +11,5 @@ hook.Add("PostHumanKilledZombie", "FleshMesh.PHKZ", function(pl, attacker, infli
 
     attacker:UpdateStat("FleshMeshCredits", 50)
 end)
+
+nightrally.LogFile("sv_fleshmesh.lua")

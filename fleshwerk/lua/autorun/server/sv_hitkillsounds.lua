@@ -31,3 +31,5 @@ hook.Add("PostEntityTakeDamage", "nZS.HitSounds", function(ent, dmginfo)
 		end
 	end
 end)
+
+nightrally.LogFile("sv_hitkillsounds.lua")

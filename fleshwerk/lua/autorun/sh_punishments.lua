@@ -54,3 +54,5 @@ end
 function meta:PunishedNotify(text)
     self:CenterNotify(Color(251, 47, 47), text)
 end
+
+nightrally.LogFile("sh_punishments.lua")

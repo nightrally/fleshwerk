@@ -119,3 +119,5 @@ for _, mapid in pairs(MapDownloads) do
         break
     end
 end
+
+nightrally.LogFile("sv_maphandler.lua")

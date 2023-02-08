@@ -68,3 +68,5 @@ NZSCOLOR_CREDITS = Color(255, 245, 157)
 function nightrally.LogFile(txt)
     print(Either(SERVER, "[nZS SERVER] Successfully loaded "..txt, "[nZS CLIENT] Successfully loaded "..txt))
 end
+
+nightrally.LogFile("sh_utils1.lua")

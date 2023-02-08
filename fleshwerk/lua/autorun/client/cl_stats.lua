@@ -290,3 +290,5 @@ function StatsMenuV1()
     LBStatZSRemortLevel("Remort Level",     "remort levels!")
     LBStatZSXP("XP",                        "XP!")
 end
+
+nightrally.LogFile("cl_stats.lua")

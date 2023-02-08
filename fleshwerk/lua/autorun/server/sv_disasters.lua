@@ -9,9 +9,7 @@ function meta:CallNuclearWarhead()
 
     timer.Simple(7, function()
         BroadcastLua("surface.PlaySound(\"nightrally/disasters/nuke_explosion.ogg\")")
-        --BroadcastLua("surface.PlaySound(\"nightrally/disasters/nuke_wind.ogg\")")
-        BroadcastLua("util.ScreenShake(LocalPlayer():GetPos(), 10000, 2^31, 12, 2^31)")
-        BroadcastLua("util.ScreenShake(LocalPlayer():GetPos(), 10, 2^31, 40, 2^31)")
+        BroadcastLua("util.ScreenShake(LocalPlayer():GetPos(), 10, 2^31, 12, 2^31)")
         BroadcastLua("util.WhiteOut(12)")
         for _, pl in ipairs(team.GetPlayers(TEAM_ZOMBIE)) do
             pl:TakeSpecialDamage(pl:Health(), DMG_ALWAYSGIB, self)
@@ -20,17 +18,8 @@ function meta:CallNuclearWarhead()
             end
         end
 
-        timer.Create("NukeDamage_"..self:Name(), 1, 40, function()
-            for _, z in ipairs(team.GetPlayers(TEAM_ZOMBIE)) do
-                if z:IsValidLivingZombie() and self:IsValid() then
-                    z:TakeDamage(17, self)
-                end
-            end
-        end)
-
         for _, all in ipairs(player.GetAll()) do
             all:SetFOV(160)
-            --all:GiveStatus("nukefog", 40)
         end
         timer.Simple(0, function()
             for _, all in ipairs(player.GetAll()) do

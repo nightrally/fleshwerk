@@ -12,3 +12,5 @@ net.Receive("nZS.HitSound", function()
 
     lp:EmitSound("nightrally/hitsound.wav", 0, math.Clamp(100 - (damage / 10), 50, 100))
 end)
+
+nightrally.LogFile("cl_utils.lua")

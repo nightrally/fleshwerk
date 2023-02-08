@@ -91,3 +91,5 @@ function FleshMeshV1()
 
     AddPopularItem("Nuclear Warhead", "Spawns in a Nuclear Warhead, killing all zombies spawned in.", 400, "nightrally/icons/nuclearwarhead")
 end
+
+nightrally.LogFile("cl_fleshmesh.lua")

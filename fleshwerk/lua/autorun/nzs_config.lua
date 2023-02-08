@@ -44,3 +44,5 @@ nightrally.ChatTips = {
 }
 
 nightrally.TotalSkillTrees = 7
+
+nightrally.LogFile("nzs_config.lua")

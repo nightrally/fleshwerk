@@ -39,3 +39,5 @@ hook.Add("HUDPaint", "ShowAFKMessahe", function()
         draw.SimpleTextBlur("Move to return", "ZSHUDFontSmall", ScrW() / 2, ScrH() / 2 + 50, COLOR_GRAY, TEXT_ALIGN_CENTER)
     end
 end)
+
+nightrally.LogFile("cl_afk.lua")

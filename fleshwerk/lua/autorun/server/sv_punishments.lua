@@ -92,3 +92,5 @@ hook.Add( "PlayerCanHearPlayersVoice", "Punishment.PCHPV", function( listener, t
 		return false
 	end
 end )
+
+nightrally.LogFile("sv_punishments.lua")

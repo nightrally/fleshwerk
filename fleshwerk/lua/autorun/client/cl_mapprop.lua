@@ -103,3 +103,5 @@ net.Receive("nZSSigilNode", function()
     SetClipboardText("local ent = ents.Create ( \"prop_obj_sigil\" )\nent:SetPos( Vector("..tostring( math.Round(ply:GetPos().x, 2)..", "..math.Round(ply:GetPos().y, 2)..", "..math.Round(ply:GetPos().z, 2) )..") )\nent:Spawn()")
     chat.AddText(Color(20, 255, 20), "Copied sigil node code to clipboard!")
 end)
+
+nightrally.LogFile("cl_mapprop.lua")

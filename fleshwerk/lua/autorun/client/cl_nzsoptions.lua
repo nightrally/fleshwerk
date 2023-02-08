@@ -208,3 +208,5 @@ function nightrally.Staff()
 
     Staff("wristwatch", "76561198401834184", "Moderator", "mod")
 end
+
+nightrally.LogFile("cl_nzsoptions.lua")

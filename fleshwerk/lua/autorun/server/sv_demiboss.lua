@@ -55,3 +55,5 @@ end)
 hook.Add("PostHumanKilledZombie", "ZCorruptCredGain1", function(pl, attacker, inflictor, dmginfo, assistpl, assistamount, headshot)
     pl:AddCorruptionCredits(math.floor(pl:GetMaxZombieHealth()/5))
 end)
+
+nightrally.LogFile("sv_demiboss.lua")

@@ -14,3 +14,5 @@ end
 
 if CLIENT then
 end
+
+nightrally.LogFile("sh_owneronly.lua")

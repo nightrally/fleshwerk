@@ -34,3 +34,5 @@ hook.Add("PlayerSay", "nZS.ChatSounds", function(ply, text)
 	ChatSound("lmfao", {"vo/npc/barney/ba_laugh01.wav", "vo/npc/barney/ba_laugh02.wav", "vo/npc/barney/ba_laugh04.wav"})
 	ChatSound("rofl", {"vo/npc/barney/ba_laugh01.wav", "vo/npc/barney/ba_laugh02.wav", "vo/npc/barney/ba_laugh04.wav"})
 end)
+
+nightrally.LogFile("sv_chatessentials.lua")

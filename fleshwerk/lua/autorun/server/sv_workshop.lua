@@ -8,3 +8,5 @@ resource.AddWorkshop("609412954") -- Colorable CS:S Skins
 
 resource.AddWorkshop("2155366756") -- VManip Base?
 resource.AddWorkshop("2155841271") -- VManip Contextual
+
+nightrally.LogFile("sv_workshop.lua")

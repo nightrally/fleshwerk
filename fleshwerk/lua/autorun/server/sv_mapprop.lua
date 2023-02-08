@@ -34,3 +34,5 @@ hook.Add("PlayerSay", "MapProfile.PlayerSay", function(ply, text)
         net.Send(ply)
     end
 end)
+
+nightrally.LogFile("sv_mapprop.lua")
