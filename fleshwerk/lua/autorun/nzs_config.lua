@@ -4,7 +4,7 @@ nightrally.TimeLimit = 15
 nightrally.RoundLimit = 3
 nightrally.MaxSigils = 3
 nightrally.StartingLoadouts = {
-	{"blstr", "2sgcp", "3sgcp", "medkit", "60mkit", "90mkit"}
+	{"blstr", "2sgcp", "3sgcp", "medkit", "60mkit", "90mkit"},
 	{"pshtr", "resupplybox", "3pcp", "2pcp"},
 	{"btlax", "3pcp", "2pcp", "remantler"},
 	{"stbbr", "3rcp", "2rcp", "targetingvisi"},
