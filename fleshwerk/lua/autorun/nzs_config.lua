@@ -51,7 +51,7 @@ nightrally.ChatTips = {
 	"Make sure not to break our rules."
 	"Want to join our Discord server? Type !discord to join our community.",
 	"You can open the nZS staff list menu by typing !staff.",
-	"As a zombie, you gain Corruption Credits which you can spend on items in Corruption Pact. Press F2 to open it."
+	"As a zombie, you gain Corruption Credits which you can spend on items in Corruption Pact. Press F2 to open it.",
 	"Press UNDO or ZOOM as a human to phase through barricades.",
 	"Press SHIFT as most zombie classes to feign death.",
 	"Press SHIFT as a headcrab to burrow under the ground.",
