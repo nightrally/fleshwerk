@@ -48,7 +48,7 @@ nightrally.ChatTips = {
 	"You can access the zombie class selection menu by pressing F3.",
 	"You can access the Worth Menu or Points Shop by pressing F2.",
 	"You can disable nZS Tips by typing !options.",
-	"Make sure not to break our rules."
+	"Make sure not to break our rules.",
 	"Want to join our Discord server? Type !discord to join our community.",
 	"You can open the nZS staff list menu by typing !staff.",
 	"As a zombie, you gain Corruption Credits which you can spend on items in Corruption Pact. Press F2 to open it.",
