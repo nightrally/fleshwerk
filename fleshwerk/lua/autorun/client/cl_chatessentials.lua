@@ -4,18 +4,6 @@ timer.Create("ChatTips", 120, 0, function()
     chat.AddText(NZSCOLOR_GREEN, "[nZS Tips] :information: ", color_white, nightrally.ChatTips[math.random(#nightrally.ChatTips)])
 end)
 
---[[local reqhumans = 0
-hook.Add("HUDPaint", "NoZMaining", function()
-    if engine.ActiveGamemode() ~= "zombiesurvival" then return end
-    local s = BetterScreenScale()
-
-    if #player.GetHumans() >= reqhumans then
-        draw.SimpleText("ZMaining Allowed | "..#player.GetHumans().." / "..reqhumans.." human players", "ZSHUDFont_18", 5 * s, 152 * s, Color(47, 251, 47), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    else
-        draw.SimpleText("No ZMaining | "..(#player.GetHumans()).." / "..reqhumans.." human players", "ZSHUDFont_18", 5 * s, 152 * s, Color(251, 47, 47), TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
-    end
-end)]]
-
 gameevent.Listen( "player_connect_client" )
 hook.Add( "player_connect_client", "nZS.JoinMessages", function( data )
 	local name = data.name
