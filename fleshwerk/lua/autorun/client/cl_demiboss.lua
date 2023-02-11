@@ -22,11 +22,9 @@ function ZCorruptionPact()
 
     local sheet = vgui.Create("DPropertySheet", frame)
     sheet:Dock(FILL)
-    --sheet.Paint = function() end
 
     local cat1 = vgui.Create("DPanel", sheet)
     sheet:AddSheet("Zombie Classes", cat1, "icon16/bug.png")
-    --cat1.Paint = function() end
     local zclasses = vgui.Create("DScrollPanel", cat1)
     zclasses:Dock( FILL )
 
