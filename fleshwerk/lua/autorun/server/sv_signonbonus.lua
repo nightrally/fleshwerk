@@ -50,12 +50,22 @@ function SignOnSaveVault(pl)
 	file.Write(filename, Serialize(tosave))
 end
 
-hook.Add("PlayerInitialSpawn", "SignOn.Setup2", function(pl)
+hook.Add("PlayerInitialSpawn", "SignOn.Setup1", function(pl)
+	if nightrally.SignOnBonusDisabled then
+		hook.Remove("PlayerInitialSpawn", "SignOn.Setup1")
+		return
+	end
+
     SignOnInitializeVault(pl)
 	load_queue[pl] = true
 end)
 
-hook.Add("SetupMove", "SignOn.Setup3", function(ply, _, cmd)
+hook.Add("SetupMove", "SignOn.Setup2", function(ply, _, cmd)
+	if nightrally.SignOnBonusDisabled then
+		hook.Remove("SetupMove", "SignOn.Setup2")
+		return
+	end
+
 	if load_queue[ply] and not cmd:IsForced() then
 		load_queue[ply] = nil
 
@@ -71,6 +81,11 @@ hook.Add("SetupMove", "SignOn.Setup3", function(ply, _, cmd)
 end)
 
 hook.Add("PlayerInitialSpawnRound", "SignOn.Setup3", function(pl)
+	if nightrally.SignOnBonusDisabled then
+		hook.Remove("PlayerInitialSpawnRound", "SignOn.Setup3")
+		return
+	end
+
     SignOnLoadVault(pl)
 end)
 

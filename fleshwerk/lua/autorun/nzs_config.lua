@@ -1,5 +1,7 @@
 nightrally = nightrally or {}
 
+nightrally.SignOnBonusDisabled = true
+
 nightrally.TimeLimit = 15
 nightrally.RoundLimit = 3
 nightrally.MaxSigils = 3
