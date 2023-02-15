@@ -13,7 +13,7 @@ local MapDownloads = {
     ["zs_cabin_v4"] = "2914179636",
     ["zs_fortress"] = "2914179636",
     ["zs_lambdacore_nzs"] = "2914179636",
-    ["zs_obj_6_nights"] = "2914179636",
+    ["zs_obj_6_nights_v8"] = "2914179636",
     ["zs_onett_v6"] = "2914179636",
     ["zs_zombiebridge"] = "2914179636",
 
@@ -25,32 +25,16 @@ local MapDownloads = {
     ["zs_longhallway"] = "2920072704",
     ["zs_red_room_v2"] = "2920072704",
 
-
-    --[[["gm_crossroads"]                   = "762302737",
-    ["zs_backrooms"]                    = "2848282669",
-    ["zs_abandoned_mall_v6b"]           = "675353904",
-    ["zs_cliffside_night"]              = "2792195466",
-    ["zs_cabin_v4"]                     = "758588249",
-    ["zs_raindance"]                    = "2868596230",
-    ["zs_trainstation"]                 = "824170721",
-    ["zs_zombiebridge"]                 = "2113419006",
-    ["zs_lambdacore"]                   = "2914179636",
-    ["zs_fortress"]                     = "2648935140",
-    ["zs_onett_v6"]                     = "620613205",
-    ["zs_abandoned_mall_night_v3"]      = "1430400683",
-    ["zs_fourside"]                     = "620336567",
-
-    ["zs_obj_lambdacore_v21"]           = "644445805",
-    ["zs_obj_vertigo_v25"]              = "160096524",
-    ["zs_obj_tantibus_v12"]             = "634307070",
-    ["zs_obj_devourer_towerz"]          = "1724373885"]]
+    -- Map Pack #3
+    ["zs_nicorooms_v1"] = "2933081022",
+    ["zs_pyongyang_v1sf"] = "2933081022",
 }
 
 local serverMaps = {
     -- Map Pack #1
     "gm_construct",
     "zs_cabin_v4",
-    "zs_lambdacore_nzs",
+    "zs_lambdacore_nzs_v2",
 
     -- Map Pack #2
     "ze_ffvii_mako_reactor_v5_4e1",
@@ -58,6 +42,10 @@ local serverMaps = {
     "zs_cadingpractice",
     "zs_flatgrass",
     "zs_red_room_v2",
+
+    -- Map Pack #3
+    "zs_nicorooms_v1",
+    "zs_pyongyang_v1sf",
 }
 
 local navmeshedMaps = {
@@ -74,6 +62,7 @@ local navmeshedMaps = {
     ["zs_red_room_v2"] = {Name = "Red Room V2", Size = SMALL, Type = SURVIVAL},
 }
 
+local col = Color(255, 255, 255)
 hook.Add("LoadNextMap", "MapHandler.LoadNextMap", function()
     GAMEMODE:CenterNotify("Loading next map...")
 
@@ -83,8 +72,6 @@ hook.Add("LoadNextMap", "MapHandler.LoadNextMap", function()
     local mapSize = navmeshedMaps[randomMap].Size
     local mapType = navmeshedMaps[randomMap].Type
     local mapMinPlayers = navmeshedMaps[randomMap].MinPlayers
-
-    local col = Color(255, 255, 255)
 
     if mapSize == TINY then
         col = Color(255, 0, 0)
