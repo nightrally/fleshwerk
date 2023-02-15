@@ -88,6 +88,14 @@ hook.Add("LoadNextMap", "MapHandler.LoadNextMap", function()
     end
 
     timer.Simple(8, function()
+        if mapName == nil or mapSize == nil or mapType == nil then
+            GAMEMODE:CenterNotify(Color(255, 165, 0), "Failed to load chosen map! Defaulting to gm_construct to prevent errors...")
+            timer.Simple(8, function()
+                RunConsoleCommand("changelevel", "gm_construct")
+            end)
+            return
+        end
+        
         GAMEMODE:CenterNotify({font = "ZSHUDFontSmall"}, Color(50, 200, 200), mapName)
         GAMEMODE:CenterNotify("Map Size: ", col, mapSize)
         GAMEMODE:CenterNotify("Map Type: ", Color(200, 50, 50), mapType)
