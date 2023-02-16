@@ -32,6 +32,15 @@ hook.Add( "player_disconnect", "nZS.LeaveMessages", function( data )
     surface.PlaySound("buttons/combine_button2.wav")
 end )
 
+gameevent.Listen( "player_changename" )
+hook.Add( "player_changename", "nZS.NameChanged", function( data ) 
+	local id = data.userid
+	local oldname = data.oldname
+	local newname = data.newname
+
+    chat.AddText(NZSCOLOR_GREEN, oldname, color_white, " changed their Steam username to ", NZSCOLOR_GREEN, newname)
+end )
+
 net.Receive("nZS.FullyLoad", function()
     local name = net.ReadString()
     local steamid = net.ReadString()

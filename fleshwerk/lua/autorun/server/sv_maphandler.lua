@@ -45,7 +45,7 @@ local serverMaps = {
 
     -- Map Pack #3
     "zs_nicorooms_v1",
-    "zs_pyongyang_v1sf",
+    --"zs_pyongyang_v1sf",
 }
 
 local navmeshedMaps = {
@@ -60,6 +60,10 @@ local navmeshedMaps = {
     ["zs_cadingpractice"] = {Name = "Cading Practice", Size = TINY, Type = SURVIVAL},
     ["zs_flatgrass"] = {Name = "ZS Flatgrass", Size = TINY, Type = SURVIVAL},
     ["zs_red_room_v2"] = {Name = "Red Room V2", Size = SMALL, Type = SURVIVAL},
+
+    -- Map Pack #3
+    ["zs_nicorooms_v1"] = {Name = "Nicorooms V1", Size = TINY, Type = SURVIVAL},
+    ["zs_pyongyang_v1sf"] = {Name = "Pyongyang V1SF", Size = MEDIUM, Type = SURVIVAL},
 }
 
 local col = Color(255, 255, 255)
@@ -71,7 +75,7 @@ hook.Add("LoadNextMap", "MapHandler.LoadNextMap", function()
     local mapName = navmeshedMaps[randomMap].Name
     local mapSize = navmeshedMaps[randomMap].Size
     local mapType = navmeshedMaps[randomMap].Type
-    local mapMinPlayers = navmeshedMaps[randomMap].MinPlayers
+    --local mapMinPlayers = (navmeshedMaps[randomMap].MinPlayers or "?")
 
     if mapSize == TINY then
         col = Color(255, 0, 0)
@@ -88,14 +92,6 @@ hook.Add("LoadNextMap", "MapHandler.LoadNextMap", function()
     end
 
     timer.Simple(8, function()
-        if mapName == nil or mapSize == nil or mapType == nil then
-            GAMEMODE:CenterNotify(Color(255, 165, 0), "Failed to load chosen map! Defaulting to gm_construct to prevent errors...")
-            timer.Simple(8, function()
-                RunConsoleCommand("changelevel", "gm_construct")
-            end)
-            return
-        end
-        
         GAMEMODE:CenterNotify({font = "ZSHUDFontSmall"}, Color(50, 200, 200), mapName)
         GAMEMODE:CenterNotify("Map Size: ", col, mapSize)
         GAMEMODE:CenterNotify("Map Type: ", Color(200, 50, 50), mapType)
