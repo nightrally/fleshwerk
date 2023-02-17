@@ -73,7 +73,7 @@ hook.Add("SetupMove", "SignOn.Setup2", function(ply, _, cmd)
 
 		if ply:GetNWBool("nZS.SignOnBonus") == false then
 			ply:SendLua("GiveSignOnBonus()")
-			ply:AddZSXP(2800)
+			ply:AddZSXP(nightrally.SignOnXP)
 			ply:SetNWBool("nZS.SignOnBonus", true)
 			SignOnSaveVault(ply)
 		end
