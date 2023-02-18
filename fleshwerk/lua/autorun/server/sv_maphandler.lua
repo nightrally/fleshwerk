@@ -26,44 +26,68 @@ local MapDownloads = {
     ["zs_red_room_v2"] = "2920072704",
 
     -- Map Pack #3
+    ["zs_abandoned_mall_v6b"] = "2933081022",
+    ["zs_alexg_metro_v4a"] = "2933081022",
     ["zs_nicorooms_v1"] = "2933081022",
+    ["zs_obj_827_to_phoenix_v8"] = "2933081022",
     ["zs_pyongyang_v1sf"] = "2933081022",
+    ["zs_trainstation"] = "2933081022",
 }
 
 local serverMaps = {
-    -- Map Pack #1
     "gm_construct",
+
+    -- Map Pack #1
     "zs_cabin_v4",
-    "zs_lambdacore_nzs_v2",
+    --"zs_fortress",
+    "zs_lambdacore_nzs",
+    --"zs_obj_6_nights_v8",
+    --"zs_onett_v6",
+    --"zs_zombiebridge",
 
     -- Map Pack #2
     "ze_ffvii_mako_reactor_v5_4e1",
     --"zs_brick_trick_v3",
     --"zs_cadingpractice",
     "zs_flatgrass",
+    "zs_longhallway",
     --"zs_red_room_v2",
 
     -- Map Pack #3
+    "zs_abandoned_mall_v6b",
+    --"zs_alexg_metro_v4a",
     --"zs_nicorooms_v1",
+    --"zs_obj_827_to_phoenix_v8",
     --"zs_pyongyang_v1sf",
+    --"zs_trainstation",
 }
 
 local navmeshedMaps = {
-    -- Map Pack #1
     ["gm_construct"] = {Name = "GM Construct", Size = EXTRALARGE, Type = SURVIVAL},
+
+    -- Map Pack #1
     ["zs_cabin_v4"] = {Name = "Cabin V4", Size = SMALL, Type = SURVIVAL},
+    ["zs_fortress"] = {Name = "Fortress", Size = MEDIUM, Type = SURVIVAL},
+    ["zs_obj_6_nights_v8"] = {Name = "6 Nights V8", Size = DYNAMIC, Type = OBJECTIVE},
     ["zs_lambdacore_nzs_v2"] = {Name = "Lambdacore nZS", Size = MEDIUM, Type = SURVIVAL},
+    ["zs_onett_v6"] = {Name = "Onett V6", Size = LARGE, Type = SURVIVAL},
+    ["zs_zombiebridge"] = {Name = "Zombie Bridge", Size = LARGE, Type = SURVIVAL},
 
     -- Map Pack #2
     ["ze_ffvii_mako_reactor_v5_4e1"] = {Name = "Mako Reactor V5 4E1", Size = LARGE, Type = ESCAPE},
     ["zs_brick_trick_v3"] = {Name = "Brick Trick V3", Size = SMALL, Type = SURVIVAL},
     ["zs_cadingpractice"] = {Name = "Cading Practice", Size = TINY, Type = SURVIVAL},
     ["zs_flatgrass"] = {Name = "ZS Flatgrass", Size = TINY, Type = SURVIVAL},
+    ["zs_longhallway"] = {Name = "Long Hallway", Size = SMALL, Type = SURVIVAL},
     ["zs_red_room_v2"] = {Name = "Red Room V2", Size = SMALL, Type = SURVIVAL},
 
     -- Map Pack #3
+    ["zs_abandoned_mall_v6b"] = {Name = "Abandoned Mall V6B", Size = EXTRALARGE, Type = SURVIVAL},
+    ["zs_alexg_metro_v4a"] = {Name = "AlexG Metro V4A", Size = SMALL, Type = SURVIVAL},
     ["zs_nicorooms_v1"] = {Name = "Nicorooms V1", Size = TINY, Type = SURVIVAL},
+    ["zs_obj_827_to_phoenix_v8"] = {Name = "To Phoenix V8", Size = DYNAMIC, Type = OBJECTIVE},
     ["zs_pyongyang_v1sf"] = {Name = "Pyongyang V1SF", Size = MEDIUM, Type = SURVIVAL},
+    ["zs_trainstation"] = {Name = "Trainstation", Size = MEDIUM, Type = SURVIVAL},
 }
 
 local col = Color(255, 255, 255)
