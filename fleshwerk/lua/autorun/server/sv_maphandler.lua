@@ -38,13 +38,13 @@ local serverMaps = {
 
     -- Map Pack #2
     "ze_ffvii_mako_reactor_v5_4e1",
-    "zs_brick_trick_v3",
-    "zs_cadingpractice",
+    --"zs_brick_trick_v3",
+    --"zs_cadingpractice",
     "zs_flatgrass",
-    "zs_red_room_v2",
+    --"zs_red_room_v2",
 
     -- Map Pack #3
-    "zs_nicorooms_v1",
+    --"zs_nicorooms_v1",
     --"zs_pyongyang_v1sf",
 }
 
