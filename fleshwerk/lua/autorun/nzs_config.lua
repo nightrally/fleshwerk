@@ -45,5 +45,5 @@ nightrally.ChatTips = {
 	"The max level is currently level "..nightrally.MaxLevel.."."
 }
 
-nightrally.SkillTreeVersion = 3
+nightrally.SkillTreeVersion = 4
 nightrally.TotalSkillTrees = 7
