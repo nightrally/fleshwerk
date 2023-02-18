@@ -9,12 +9,6 @@ hook.Add("PostPlayerSpawn", "Demiboss.PPS", function(pl)
             GAMEMODE:CenterNotify(NZSCOLOR_ORANGE, {killicon = classtab.SWEP}, " "..pl:Name().." has risen as "..classtab.Name.."!! ", {killicon = classtab.SWEP})
             return
         end
-
-		if classtab.GreatEvil then
-            GAMEMODE:CenterNotify(NZSCOLOR_DISASTER, {font = "ZSHUDFont"}, "A Great Evil has been summoned...")
-			BroadcastLua("MySelf:EmitSound(\"npc/zombie_poison/pz_alert1.wav\", 0, math.random(50, 60))")
-            return
-        end
     end
 end)
 
