@@ -2,7 +2,7 @@ local delaytime = CurTime()
 local checkfordelay = 1
 local AFKTimer = 0
 local AFKCounter = true
-local AFK_TimeUntilAFK = 60
+local AFK_TimeUntilAFK = 300
 local AFK_EnableAutoAFK = true
 hook.Add( "Move", "AFKSystem", function( ply, mv )
     if AFKCounter and ply:Team() == TEAM_UNDEAD then

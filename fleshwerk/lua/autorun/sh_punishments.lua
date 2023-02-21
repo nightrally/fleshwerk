@@ -1,17 +1,5 @@
 local meta = FindMetaTable("Player")
 
-hook.Add("OnWaveStart", "ddd", function()
-    timer.Simple(2, function()
-        RunConsoleCommand("ulx", "playurl", "https://cdn.discordapp.com/attachments/1047823974186373197/1075834858171027526/ohio_ahh_sound_effect_320_kbps.mp3")
-    end)
-end)
-
-hook.Add("OnWaveEnd", "ddd", function()
-    timer.Simple(2, function()
-        RunConsoleCommand("ulx", "playurl", "https://cdn.discordapp.com/attachments/1047823974186373197/1075834858171027526/ohio_ahh_sound_effect_320_kbps.mp3")
-    end)
-end)
-
 function meta:SetChatMuted(val)
     self:SetNWBool("Punishment.ChatMuted", val)
     PunishmentSaveVault(self)

@@ -12,7 +12,7 @@ local MapDownloads = {
     -- Map Pack #1
     ["zs_cabin_v4"] = "2914179636",
     ["zs_fortress"] = "2914179636",
-    ["zs_lambdacore_nzs"] = "2914179636",
+    ["zs_lambdacore_nzs_v2"] = "2914179636",
     ["zs_obj_6_nights_v8"] = "2914179636",
     ["zs_onett_v6"] = "2914179636",
     ["zs_zombiebridge"] = "2914179636",
@@ -40,7 +40,7 @@ local serverMaps = {
     -- Map Pack #1
     "zs_cabin_v4",
     --"zs_fortress",
-    "zs_lambdacore_nzs",
+    "zs_lambdacore_nzs_v2",
     --"zs_obj_6_nights_v8",
     --"zs_onett_v6",
     --"zs_zombiebridge",
@@ -57,9 +57,9 @@ local serverMaps = {
     "zs_abandoned_mall_v6b",
     --"zs_alexg_metro_v4a",
     --"zs_nicorooms_v1",
-    --"zs_obj_827_to_phoenix_v8",
+    "zs_obj_827_to_phoenix_v8",
     --"zs_pyongyang_v1sf",
-    --"zs_trainstation",
+    "zs_trainstation",
 }
 
 local navmeshedMaps = {

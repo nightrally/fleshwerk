@@ -9,6 +9,26 @@ hook.Add("PostPlayerSpawn", "Demiboss.PPS", function(pl)
             GAMEMODE:CenterNotify(NZSCOLOR_ORANGE, {killicon = classtab.SWEP}, " "..pl:Name().." has risen as "..classtab.Name.."!! ", {killicon = classtab.SWEP})
             return
         end
+
+		if classtab.Name == "Figure" then
+			BroadcastLua("MySelf:EmitSound(\"nightrally/sfx/creak\"..math.random(3)..\".ogg\", 0, math.random(90, 110))")
+            GAMEMODE:CenterNotify(NZSCOLOR_ORANGE, {font = "ZSHUDFontSmall"}, "Figure has been summoned!")
+			timer.Simple(3, function()
+			GAMEMODE:CenterNotify("Don't make too much sound! Figure is blind and only hears sound.")
+			end)
+			timer.Simple(6, function()
+			GAMEMODE:CenterNotify(NZSCOLOR_RED, "M1 with weapons, walking and jumping count as noise!")
+			end)
+			timer.Simple(9, function()
+			GAMEMODE:CenterNotify(NZSCOLOR_CYAN, "Crouch walking, standing still and typing in chat count as silence!")
+			end)
+			timer.Simple(12, function()
+			GAMEMODE:CenterNotify(NZSCOLOR_ORANGE, {font = "ZSHUDFontSmall"}, "Damaging Figure only angers it.")
+			end)
+			timer.Simple(15, function()
+			GAMEMODE:CenterNotify("Good luck! Points will be rewarded depending on the Figure survival rate!")
+			end)
+		end
     end
 end)
 

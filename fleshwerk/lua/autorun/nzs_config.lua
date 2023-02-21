@@ -1,7 +1,7 @@
 nightrally = nightrally or {}
 
-nightrally.SignOnBonusDisabled = true
-nightrally.SignOnXP = 500
+nightrally.SignOnBonusDisabled = false
+nightrally.SignOnXP = 1500
 
 nightrally.TimeLimit = 15
 nightrally.RoundLimit = 3
@@ -45,5 +45,5 @@ nightrally.ChatTips = {
 	"The max level is currently level "..nightrally.MaxLevel.."."
 }
 
-nightrally.SkillTreeVersion = 4
+nightrally.SkillTreeVersion = 5
 nightrally.TotalSkillTrees = 7

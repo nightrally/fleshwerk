@@ -48,8 +48,8 @@ NZSCOLOR_STAFF = {
     ["smod"] = Color(105, 169, 255),
     ["xadmin"] = Color(255, 61, 61),
     ["hadmin"] = Color(235, 0, 0),
-    ["coowner"] = Color(46, 204, 113),
-    ["owner"] = Color(46, 204, 113)
+    ["developer"] = Color(255, 220, 53),
+    ["owner"] = Color(47, 251, 47)
 }
 
 NZSCOLOR_GREEN = Color(47, 251, 47)

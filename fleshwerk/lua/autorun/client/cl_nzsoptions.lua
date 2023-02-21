@@ -110,18 +110,11 @@ function nightrally.Credits()
 
     Cat("nZS Contributions")
     Credit("nightrally", "76561198171603670", "Owner/Developer of nZS")
+    Credit("Anakinhall06", "76561198097536249", "Developer")
+    Credit("connected", "76561198401834184", "Developer")
     Credit("Cylowalker", "76561198237158014", "Weapon reanimations and default weapon killicons")
     Credit("Weigurde", "76561198913877245", "Map contributions")
     Credit("Bruhani", "76561198965259619", "Some map navmeshes")
-    Credit("Anakinhall06", "76561198097536249", "SCK contributions")
-
-    local forumpost = "Accepted forum posts"
-    Cat("Special Thanks")
-    Credit("wristwatch", "76561198401834184", forumpost)
-    Credit("Anakinhall06", "76561198097536249", forumpost)
-    Credit("the_hade", "76561198146727504", forumpost)
-    Credit("HACH", "76561197987819134", forumpost)
-    Credit("EPIC KLEINER", "76561198352881744", forumpost)
 
     Cat("Miscellaneous")
 	Credit("Scott", "76561198024593456", "Sunrust server content packs")
@@ -198,15 +191,10 @@ function nightrally.Staff()
 
     Staff("nightrally", "76561198171603670", "Owner", "owner")
 
-    Staff("Anakinhall06", "76561198097536249", "Co-Owner", "coowner")
+    Staff("Anakinhall06", "76561198097536249", "Developer", "developer")
+    Staff("wristwatch", "76561198401834184", "Developer", "developer")
 
-    Staff("[UB]Cylowalker", "76561198237158014", "Head Administrator", "hadmin")
-
-    Staff("Gamer Tactics NotFound.Tech", "76561198153600609", "Administrator", "xadmin")
-
-    Staff("the_andrei", "76561198362239688", "Senior Moderator", "smod")
-
-    Staff("wristwatch", "76561198401834184", "Moderator", "mod")
+    Staff("the_hade", "76561198146727504", "Trial Moderator", "tmod")
 end
 
 nightrally.LogFile("cl_nzsoptions.lua")
