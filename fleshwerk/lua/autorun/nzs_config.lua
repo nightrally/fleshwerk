@@ -13,7 +13,7 @@ nightrally.StartingLoadouts = {
 	{"tossr", "3smgcp", "medkit"},
 	{"blstr", "3sgcp", "2sgcp", "medkit"},
 	{"owens", "3pcp", "2pcp", "2smgcp", "3smgcp"},
-	{"processor", "medkit", "90mkit", "60mkit" "bloodshot"},
+	{"processor", "medkit", "90mkit", "60mkit", "bloodshot"},
 	{"crklr", "3arcp", "2arcp", "6scrap"},
 	{"junkpack", "crphmr", "barricadekit"},
 	{"z9000", "3pls", "2pls", "medkit"},
